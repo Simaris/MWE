@@ -8,8 +8,10 @@ markdown: kramdown
 
 # jekyll-rdf
 plugins:
-    - jekyll-rdf
+    - jekyll-test-gem
 jekyll_rdf:
     path: "rdf-data/content.ttl"
     class_template_mappings:
+        "http://xmlns.com/foaf/0.1/Document" : "document.html"
+    instance_template_mappings:
         "http://xmlns.com/foaf/0.1/Document" : "document.html"
